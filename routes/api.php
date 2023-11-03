@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use BeyondCode\LaravelWebSockets\Facades\WebSockets;
 use App\Http\Controllers\WebSocketController;
 
 /*
@@ -15,7 +14,6 @@ use App\Http\Controllers\WebSocketController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-WebSockets::routes();
 
 Route::post('/handle-websocket-RTC-call', [WebSocketController::class, 'handleWebRtcCall']);
 
